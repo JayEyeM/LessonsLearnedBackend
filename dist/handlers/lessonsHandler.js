@@ -1,6 +1,6 @@
 // File path: src/handlers/lessonsHandler.ts
-import { supabase } from '../supabaseClient';
-import { isHoneypotFilled } from '../utils/checkHoneypot';
+import { supabase } from '../supabaseClient.js';
+import { isHoneypotFilled } from '../utils/checkHoneypot.js';
 // POST /lessons
 export async function postLesson(c) {
     try {

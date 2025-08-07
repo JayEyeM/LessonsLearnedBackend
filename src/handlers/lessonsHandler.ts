@@ -1,9 +1,9 @@
 // File path: src/handlers/lessonsHandler.ts
 
 import type { Context } from 'hono'
-import { supabase } from '../supabaseClient'
-import { isHoneypotFilled } from '../utils/checkHoneypot'
-import type { LessonEntry } from '../types/lessonsType'
+import { supabase } from '../supabaseClient.js'
+import { isHoneypotFilled } from '../utils/checkHoneypot.js'
+import type { LessonEntry } from '../types/lessonsType.js'
 
 // POST /lessons
 export async function postLesson(c: Context) {

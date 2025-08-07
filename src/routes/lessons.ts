@@ -1,7 +1,7 @@
 // src/routes/lessons.ts
 
 import { Hono } from 'hono'
-import { postLesson, getAllLessons } from '../handlers/lessonsHandler'
+import { postLesson, getAllLessons } from '../handlers/lessonsHandler.js'
 
 
 const lessonsRoutes = new Hono()

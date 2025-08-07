@@ -1,10 +1,10 @@
 // File path: src/index.ts
 
 
-    
+
 import 'dotenv/config'
 import { Hono } from 'hono'
-import lessonsRoutes from './routes/lessons'  
+import lessonsRoutes from './routes/lessons.js'  
 import { cors } from 'hono/cors'
 
 const app = new Hono()
