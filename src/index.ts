@@ -1,5 +1,7 @@
 // File path: src/index.ts
 
+
+    
 import 'dotenv/config'
 import { Hono } from 'hono'
 import lessonsRoutes from './routes/lessons'  
