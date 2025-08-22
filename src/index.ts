@@ -9,7 +9,11 @@ import { cors } from 'hono/cors'
 
 const app = new Hono()
 
-app.use('*', cors())
+app.use('*', cors({
+  origin: 'https://lessonslearnedapp-1.onrender.com',
+  allowMethods: ['GET', 'POST'],
+}))
+
 
 // Base test route
 app.get('/', (c) => c.text('Hello from the backend!'))
